@@ -4,19 +4,39 @@ import { FaUserLarge, FaFlag } from "react-icons/fa6";
 
 interface Player {
   player: IPlayer;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
   selectedPlayer: IPlayer[];
   setSelectedPlayer: Dispatch<SetStateAction<IPlayer[]>>;
 }
 
 const AvailablePlayerCard = ({
   player,
+  coin,
+  setCoin,
   selectedPlayer,
+  setSelectedPlayer,
 }: Player) => {
   const isSelected = selectedPlayer.some(
     (selected) =>
       selected.playerName === player.playerName &&
       selected.playerImg === player.playerImg
   );
+
+  const handleSelectedPlayer = () => {
+    if (isSelected) {
+      return;
+    }
+
+    const newCoinPrice = coin - player.price;
+
+    setCoin(newCoinPrice);
+
+    setSelectedPlayer((prevPlayers) => [
+      ...prevPlayers,
+      player,
+    ]);
+  };
 
   return (
     <div className="group w-full overflow-hidden rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
@@ -77,6 +97,7 @@ const AvailablePlayerCard = ({
         </p>
 
         <button
+          onClick={handleSelectedPlayer}
           disabled={isSelected}
           className="
             w-full rounded-lg

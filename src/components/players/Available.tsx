@@ -12,6 +12,8 @@ interface IPlayerType {
 
 const Available = ({
   players,
+  coin,
+  setCoin,
   selectedPlayer,
   setSelectedPlayer,
 }: IPlayerType) => {
@@ -21,6 +23,8 @@ const Available = ({
         <AvailablePlayerCard
           key={index}
           player={player}
+          coin={coin}
+          setCoin={setCoin}
           selectedPlayer={selectedPlayer}
           setSelectedPlayer={setSelectedPlayer}
         />
