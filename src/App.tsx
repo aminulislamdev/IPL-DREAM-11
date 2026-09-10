@@ -1,4 +1,5 @@
 import Navber from "./components/Navber"
+import Banner from "./components/Banner"
 import { useState } from "react";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <div>
       <Navber coin={coin} />
+      <Banner></Banner>
     </div>
   )
 }
