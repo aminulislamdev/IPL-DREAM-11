@@ -28,6 +28,16 @@ const SelectedPlayerCard = ({
 
   return (
     <div className="container mx-auto my-6 w-full rounded-2xl border border-gray-200 bg-white p-3 shadow-sm sm:my-8 sm:p-4 md:my-10 md:p-5">
+
+      {/* Count */}
+      {selectedPlayer.length > 0 && (
+        <div className="mb-4 flex items-center justify-between px-1">
+          <p className="text-sm font-semibold text-gray-600 sm:text-base">
+            {selectedPlayer.length} {selectedPlayer.length === 1 ? "Player" : "Players"} Selected
+          </p>
+        </div>
+      )}
+
       <div className="space-y-3">
         {selectedPlayer.map((player, index) => (
           <div
