@@ -3,6 +3,8 @@ import type { IPlayer } from "../../types/player";
 import { FaUserLarge, FaFlag } from "react-icons/fa6";
 import { toast } from "react-toastify";
 
+const MAX_PLAYERS = 13;
+
 interface Player {
   player: IPlayer;
   coin: number;
@@ -24,8 +26,15 @@ const AvailablePlayerCard = ({
       selected.playerImg === player.playerImg
   );
 
+  const isTeamFull = selectedPlayer.length >= MAX_PLAYERS;
+
   const handleSelectedPlayer = () => {
     if (isSelected) {
+      return;
+    }
+
+    if (isTeamFull) {
+      toast.error(`You can only select ${MAX_PLAYERS} players`);
       return;
     }
 
@@ -108,7 +117,7 @@ const AvailablePlayerCard = ({
 
         <button
           onClick={handleSelectedPlayer}
-          disabled={isSelected}
+          disabled={isSelected || isTeamFull}
           className="
             w-full rounded-lg
             border-2 border-gray-300
@@ -131,7 +140,7 @@ const AvailablePlayerCard = ({
             sm:px-5
           "
         >
-          {isSelected ? "Selected" : "Choose Player"}
+          {isSelected ? "Selected" : isTeamFull ? "Team Full" : "Choose Player"}
         </button>
       </div>
 
