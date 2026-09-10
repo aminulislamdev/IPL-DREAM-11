@@ -7,16 +7,16 @@ interface Player {
 
 const AvailablePlayerCard = ({ player }: Player) => {
   return (
-    <div className="w-full overflow-hidden rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+    <div className="group w-full overflow-hidden rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
 
       {/* Player Image */}
       <div className="relative overflow-hidden rounded-xl">
         <img
           src={player.playerImg}
           alt={player.playerName}
-          className="h-48 w-full object-cover sm:h-52"
+          className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-52"
         />
-        <span className="absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1.5 text-xs font-semibold text-gray-800 shadow">
+        <span className="absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1.5 text-xs font-semibold text-gray-800 shadow backdrop-blur-sm">
           {player.playerType}
         </span>
       </div>
@@ -40,6 +40,29 @@ const AvailablePlayerCard = ({ player }: Player) => {
         <span className="shrink-0 rounded-lg bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-700">
           {player.playerType}
         </span>
+      </div>
+
+      {/* Divider */}
+      <div className="my-5 border-t border-gray-200" />
+
+      {/* Rating */}
+      <h3 className="text-sm font-bold text-gray-900">Rating</h3>
+
+      {/* Batting & Bowling */}
+      <div className="mt-3 flex items-center justify-between gap-3">
+        <span className="truncate text-sm font-semibold text-gray-800">
+          {player.buttingStyle}
+        </span>
+        <span className="truncate text-right text-sm text-gray-500">
+          {player.bowlingStyle}
+        </span>
+      </div>
+
+      {/* Price */}
+      <div className="mt-5">
+        <p className="text-base font-bold text-gray-900">
+          Price: ${player.price}
+        </p>
       </div>
 
     </div>
