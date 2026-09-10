@@ -1,7 +1,8 @@
 import logo from "../assets/logo.png";
+import { RiBitCoinLine } from "react-icons/ri";
 import { TiThMenu } from "react-icons/ti";
 
-const Navber = () => {
+const Navber = ({ coin }: { coin: number }) => {
   return (
     <div className="container mx-auto px-4">
       <div className="navbar flex items-center justify-between py-4">
@@ -41,6 +42,15 @@ const Navber = () => {
 
         {/* Right Side */}
         <div className="flex items-center gap-2 md:gap-4">
+
+          {/* Coin */}
+          <button
+            className="flex h-10 items-center gap-1.5 rounded-lg border border-yellow-200 bg-yellow-50 px-3 text-sm font-bold text-gray-800 shadow-sm transition hover:border-yellow-400 hover:bg-yellow-100 active:scale-95 md:h-11 md:gap-2 md:px-4 md:text-base"
+          >
+            <span>{coin}</span>
+            <RiBitCoinLine className="text-lg text-yellow-500 md:text-xl" />
+          </button>
+
           {/* Mobile Menu */}
           <div className="dropdown md:hidden">
             <div
@@ -61,6 +71,7 @@ const Navber = () => {
               <li><a href="">Schedules</a></li>
             </ul>
           </div>
+
         </div>
       </div>
     </div>
