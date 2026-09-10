@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { IPlayer } from "../../types/player";
 import { FaUserLarge, FaFlag } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 interface Player {
   player: IPlayer;
@@ -30,8 +31,8 @@ const AvailablePlayerCard = ({
 
     const newCoinPrice = coin - player.price;
 
-    // Coin না থাকলে
     if (newCoinPrice < 0) {
+      toast.error("Coin is not enough to purchase");
       return;
     }
 
@@ -41,6 +42,10 @@ const AvailablePlayerCard = ({
       ...prevPlayers,
       player,
     ]);
+
+    toast.success(
+      `${player.playerName} is purchased successfully`
+    );
   };
 
   return (
