@@ -1,6 +1,7 @@
 import { use, useState, type Dispatch, type SetStateAction } from "react";
 import type { IPlayer } from "../../types/player";
 import Available from "./Available";
+import Selected from "./Selected";
 
 interface IPlayerProps {
   playerDataPromise: Promise<IPlayer[]>;
@@ -46,13 +47,20 @@ const Players = ({
         </div>
       </div>
 
-      {type === "Available" && (
+      {type === "Available" ? (
         <Available
           players={players}
           coin={coin}
           setCoin={setCoin}
           selectedPlayer={selectedPlayer}
           setSelectedPlayer={setSelectedPlayer}
+        />
+      ) : (
+        <Selected
+          selectedPlayer={selectedPlayer}
+          setSelectedPlayer={setSelectedPlayer}
+          coin={coin}
+          setCoin={setCoin}
         />
       )}
 
