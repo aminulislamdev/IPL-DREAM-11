@@ -1,0 +1,362 @@
+[
+  {
+    "playerName": "Virat Kohli",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Virat_Kohli_in_PMO_New_Delhi.jpg/220px-Virat_Kohli_in_PMO_New_Delhi.jpg",
+    "origin": "India",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm medium",
+    "buttingStyle": "Right-hand bat",
+    "price": 1700
+  },
+  {
+    "playerName": "Rohit Sharma",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Prime_Minister_Of_Bharat_Shri_Narendra_Damodardas_Modi_with_Shri_Rohit_Gurunath_Sharma.jpg/220px-Prime_Minister_Of_Bharat_Shri_Narendra_Damodardas_Modi_with_Shri_Rohit_Gurunath_Sharma.jpg",
+    "origin": "India",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm offbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 1600
+  },
+  {
+    "playerName": "Jasprit Bumrah",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jasprit_Bumrah.jpg/220px-Jasprit_Bumrah.jpg",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "buttingStyle": "Right-hand bat",
+    "price": 1500
+  },
+  {
+    "playerName": "Hardik Pandya",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Hardik_Pandya.jpg/220px-Hardik_Pandya.jpg",
+    "origin": "India",
+    "playerType": "All-rounder",
+    "bowlingStyle": "Right-arm medium-fast",
+    "buttingStyle": "Right-hand bat",
+    "price": 1450
+  },
+  {
+    "playerName": "Rishabh Pant",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Rishabh_Pant.jpg/220px-Rishabh_Pant.jpg",
+    "origin": "India",
+    "playerType": "Wicket-keeper Batsman",
+    "bowlingStyle": "None",
+    "buttingStyle": "Left-hand bat",
+    "price": 1600
+  },
+  {
+    "playerName": "KL Rahul",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/KL_Rahul.jpg/220px-KL_Rahul.jpg",
+    "origin": "India",
+    "playerType": "Wicket-keeper Batsman",
+    "bowlingStyle": "None",
+    "buttingStyle": "Right-hand bat",
+    "price": 1400
+  },
+  {
+    "playerName": "Shubman Gill",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Shubman_Gill.jpg/220px-Shubman_Gill.jpg",
+    "origin": "India",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm offbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 1300
+  },
+  {
+    "playerName": "Suryakumar Yadav",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Suryakumar_Yadav.jpg/220px-Suryakumar_Yadav.jpg",
+    "origin": "India",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm medium",
+    "buttingStyle": "Right-hand bat",
+    "price": 1250
+  },
+  {
+    "playerName": "Ravindra Jadeja",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Ravindra_Jadeja.jpg/220px-Ravindra_Jadeja.jpg",
+    "origin": "India",
+    "playerType": "All-rounder",
+    "bowlingStyle": "Left-arm orthodox",
+    "buttingStyle": "Left-hand bat",
+    "price": 1350
+  },
+  {
+    "playerName": "Mohammed Shami",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Mohammed_Shami.jpg/220px-Mohammed_Shami.jpg",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "buttingStyle": "Right-hand bat",
+    "price": 1100
+  },
+  {
+    "playerName": "Mohammed Siraj",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mohammed_Siraj.jpg/220px-Mohammed_Siraj.jpg",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "buttingStyle": "Right-hand bat",
+    "price": 1050
+  },
+  {
+    "playerName": "Kuldeep Yadav",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Kuldeep_Yadav.jpg/220px-Kuldeep_Yadav.jpg",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm chinaman",
+    "buttingStyle": "Left-hand bat",
+    "price": 950
+  },
+  {
+    "playerName": "Yuzvendra Chahal",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Yuzvendra_Chahal.jpg/220px-Yuzvendra_Chahal.jpg",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm legbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 900
+  },
+  {
+    "playerName": "Shreyas Iyer",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Shreyas_Iyer.jpg/220px-Shreyas_Iyer.jpg",
+    "origin": "India",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm legbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 1150
+  },
+  {
+    "playerName": "Axar Patel",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Axar_Patel.jpg/220px-Axar_Patel.jpg",
+    "origin": "India",
+    "playerType": "All-rounder",
+    "bowlingStyle": "Left-arm orthodox",
+    "buttingStyle": "Left-hand bat",
+    "price": 1000
+  },
+  {
+    "playerName": "Ishan Kishan",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ishan_Kishan.jpg/220px-Ishan_Kishan.jpg",
+    "origin": "India",
+    "playerType": "Wicket-keeper Batsman",
+    "bowlingStyle": "None",
+    "buttingStyle": "Left-hand bat",
+    "price": 1100
+  },
+  {
+    "playerName": "Sanju Samson",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sanju_Samson.jpg/220px-Sanju_Samson.jpg",
+    "origin": "India",
+    "playerType": "Wicket-keeper Batsman",
+    "bowlingStyle": "None",
+    "buttingStyle": "Right-hand bat",
+    "price": 1050
+  },
+  {
+    "playerName": "Arshdeep Singh",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Arshdeep_Singh.jpg/220px-Arshdeep_Singh.jpg",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm medium-fast",
+    "buttingStyle": "Left-hand bat",
+    "price": 950
+  },
+  {
+    "playerName": "Ravichandran Ashwin",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ravichandran_Ashwin.jpg/220px-Ravichandran_Ashwin.jpg",
+    "origin": "India",
+    "playerType": "All-rounder",
+    "bowlingStyle": "Right-arm offbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 850
+  },
+  {
+    "playerName": "Babar Azam",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Babar_Azam.jpg/220px-Babar_Azam.jpg",
+    "origin": "Pakistan",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm offbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 1200
+  },
+  {
+    "playerName": "Shaheen Afridi",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Shaheen_Afridi.jpg/220px-Shaheen_Afridi.jpg",
+    "origin": "Pakistan",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm fast",
+    "buttingStyle": "Left-hand bat",
+    "price": 1300
+  },
+  {
+    "playerName": "Mohammad Rizwan",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mohammad_Rizwan.jpg/220px-Mohammad_Rizwan.jpg",
+    "origin": "Pakistan",
+    "playerType": "Wicket-keeper Batsman",
+    "bowlingStyle": "None",
+    "buttingStyle": "Right-hand bat",
+    "price": 1100
+  },
+  {
+    "playerName": "Fakhar Zaman",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Fakhar_Zaman.jpg/220px-Fakhar_Zaman.jpg",
+    "origin": "Pakistan",
+    "playerType": "Batsman",
+    "bowlingStyle": "Left-arm orthodox",
+    "buttingStyle": "Left-hand bat",
+    "price": 950
+  },
+  {
+    "playerName": "Shadab Khan",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Shadab_Khan.jpg/220px-Shadab_Khan.jpg",
+    "origin": "Pakistan",
+    "playerType": "All-rounder",
+    "bowlingStyle": "Right-arm legbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 1000
+  },
+  {
+    "playerName": "Haris Rauf",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Haris_Rauf.jpg/220px-Haris_Rauf.jpg",
+    "origin": "Pakistan",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "buttingStyle": "Right-hand bat",
+    "price": 1050
+  },
+  {
+    "playerName": "Imam-ul-Haq",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Imam-ul-Haq.jpg/220px-Imam-ul-Haq.jpg",
+    "origin": "Pakistan",
+    "playerType": "Batsman",
+    "bowlingStyle": "None",
+    "buttingStyle": "Left-hand bat",
+    "price": 850
+  },
+  {
+    "playerName": "Naseem Shah",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Naseem_Shah.jpg/220px-Naseem_Shah.jpg",
+    "origin": "Pakistan",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "buttingStyle": "Right-hand bat",
+    "price": 950
+  },
+  {
+    "playerName": "Iftikhar Ahmed",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Iftikhar_Ahmed.jpg/220px-Iftikhar_Ahmed.jpg",
+    "origin": "Pakistan",
+    "playerType": "All-rounder",
+    "bowlingStyle": "Right-arm offbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 750
+  },
+  {
+    "playerName": "Mohammad Nawaz",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Mohammad_Nawaz.jpg/220px-Mohammad_Nawaz.jpg",
+    "origin": "Pakistan",
+    "playerType": "All-rounder",
+    "bowlingStyle": "Left-arm orthodox",
+    "buttingStyle": "Left-hand bat",
+    "price": 700
+  },
+  {
+    "playerName": "Kane Williamson",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kane_Williamson.jpg/220px-Kane_Williamson.jpg",
+    "origin": "New Zealand",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm offbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 900
+  },
+  {
+    "playerName": "Trent Boult",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Trent_Boult.jpg/220px-Trent_Boult.jpg",
+    "origin": "New Zealand",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm fast-medium",
+    "buttingStyle": "Right-hand bat",
+    "price": 850
+  },
+  {
+    "playerName": "Tim Southee",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tim_Southee.jpg/220px-Tim_Southee.jpg",
+    "origin": "New Zealand",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm medium-fast",
+    "buttingStyle": "Right-hand bat",
+    "price": 800
+  },
+  {
+    "playerName": "Devon Conway",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Devon_Conway.jpg/220px-Devon_Conway.jpg",
+    "origin": "New Zealand",
+    "playerType": "Wicket-keeper Batsman",
+    "bowlingStyle": "None",
+    "buttingStyle": "Left-hand bat",
+    "price": 900
+  },
+  {
+    "playerName": "Daryl Mitchell",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Daryl_Mitchell.jpg/220px-Daryl_Mitchell.jpg",
+    "origin": "New Zealand",
+    "playerType": "All-rounder",
+    "bowlingStyle": "Right-arm medium",
+    "buttingStyle": "Right-hand bat",
+    "price": 850
+  },
+  {
+    "playerName": "Glenn Phillips",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Glenn_Phillips.jpg/220px-Glenn_Phillips.jpg",
+    "origin": "New Zealand",
+    "playerType": "Wicket-keeper Batsman",
+    "bowlingStyle": "Right-arm offbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 800
+  },
+  {
+    "playerName": "Mitchell Santner",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mitchell_Santner.jpg/220px-Mitchell_Santner.jpg",
+    "origin": "New Zealand",
+    "playerType": "All-rounder",
+    "bowlingStyle": "Left-arm orthodox",
+    "buttingStyle": "Left-hand bat",
+    "price": 750
+  },
+  {
+    "playerName": "Lockie Ferguson",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Lockie_Ferguson.jpg/220px-Lockie_Ferguson.jpg",
+    "origin": "New Zealand",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "buttingStyle": "Right-hand bat",
+    "price": 850
+  },
+  {
+    "playerName": "Matt Henry",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Matt_Henry.jpg/220px-Matt_Henry.jpg",
+    "origin": "New Zealand",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast-medium",
+    "buttingStyle": "Right-hand bat",
+    "price": 700
+  },
+  {
+    "playerName": "Tom Latham",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Tom_Latham.jpg/220px-Tom_Latham.jpg",
+    "origin": "New Zealand",
+    "playerType": "Wicket-keeper Batsman",
+    "bowlingStyle": "None",
+    "buttingStyle": "Left-hand bat",
+    "price": 700
+  },
+  {
+    "playerName": "Joe Root",
+    "playerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Joe_Root.jpg/220px-Joe_Root.jpg",
+    "origin": "England",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm offbreak",
+    "buttingStyle": "Right-hand bat",
+    "price": 1100
+  }
+]
