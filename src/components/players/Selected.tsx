@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { IPlayer } from "../../types/player";
+import SelectedPlayerCard from "./SelectedPlayerCard";
 
 interface ISelectedPlayerType {
   selectedPlayer: IPlayer[];
@@ -8,12 +9,10 @@ interface ISelectedPlayerType {
   setCoin: Dispatch<SetStateAction<number>>;
 }
 
-const Selected = ({
-  selectedPlayer,
-}: ISelectedPlayerType) => {
+const Selected = ({ selectedPlayer }: ISelectedPlayerType) => {
   return (
     <div className="w-full">
-      <p>{selectedPlayer.length} players selected</p>
+      <SelectedPlayerCard selectedPlayer={selectedPlayer} />
     </div>
   );
 };
