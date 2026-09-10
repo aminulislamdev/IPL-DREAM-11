@@ -1,11 +1,23 @@
+import type { Dispatch, SetStateAction } from "react";
 import type { IPlayer } from "../../types/player";
 import { FaUserLarge, FaFlag } from "react-icons/fa6";
 
 interface Player {
   player: IPlayer;
+  selectedPlayer: IPlayer[];
+  setSelectedPlayer: Dispatch<SetStateAction<IPlayer[]>>;
 }
 
-const AvailablePlayerCard = ({ player }: Player) => {
+const AvailablePlayerCard = ({
+  player,
+  selectedPlayer,
+}: Player) => {
+  const isSelected = selectedPlayer.some(
+    (selected) =>
+      selected.playerName === player.playerName &&
+      selected.playerImg === player.playerImg
+  );
+
   return (
     <div className="group w-full overflow-hidden rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
 
@@ -58,11 +70,38 @@ const AvailablePlayerCard = ({ player }: Player) => {
         </span>
       </div>
 
-      {/* Price */}
-      <div className="mt-5">
+      {/* Price & Button */}
+      <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-base font-bold text-gray-900">
           Price: ${player.price}
         </p>
+
+        <button
+          disabled={isSelected}
+          className="
+            w-full rounded-lg
+            border-2 border-gray-300
+            bg-white px-4 py-2
+            text-sm font-semibold text-gray-700
+            transition-all duration-200
+            hover:-translate-y-0.5
+            hover:border-black
+            hover:bg-black
+            hover:text-white
+            hover:shadow-lg
+            active:scale-95
+            disabled:cursor-not-allowed
+            disabled:translate-y-0
+            disabled:border-green-500
+            disabled:bg-green-100
+            disabled:text-green-700
+            disabled:shadow-none
+            sm:w-auto
+            sm:px-5
+          "
+        >
+          {isSelected ? "Selected" : "Choose Player"}
+        </button>
       </div>
 
     </div>
