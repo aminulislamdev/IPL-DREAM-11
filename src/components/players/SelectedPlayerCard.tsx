@@ -59,6 +59,18 @@ const SelectedPlayerCard = ({
           </div>
         ))}
       </div>
+
+      {/* Empty State */}
+      {selectedPlayer.length === 0 && (
+        <div className="flex min-h-150 flex-col items-center justify-center rounded-xl border border-dashed border-gray-300 px-4 py-10 text-center sm:min-h-112.5 md:min-h-130">
+          <p className="text-2xl font-semibold text-gray-500 sm:text-3xl md:text-4xl">
+            No player selected yet
+          </p>
+          <p className="mt-1 text-sm text-gray-400 sm:text-base md:text-xl">
+            Choose players to build your team
+          </p>
+        </div>
+      )}
     </div>
   );
 };
