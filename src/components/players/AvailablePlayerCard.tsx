@@ -30,6 +30,11 @@ const AvailablePlayerCard = ({
 
     const newCoinPrice = coin - player.price;
 
+    // Coin না থাকলে
+    if (newCoinPrice < 0) {
+      return;
+    }
+
     setCoin(newCoinPrice);
 
     setSelectedPlayer((prevPlayers) => [
