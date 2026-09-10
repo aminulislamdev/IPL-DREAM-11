@@ -1,5 +1,6 @@
 import Navber from "./components/Navber"
 import Banner from "./components/Banner"
+import FooterSection from "./components/Footer";
 import { useState } from "react";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Navber coin={coin} />
       <Banner></Banner>
+      <FooterSection></FooterSection>
     </div>
   )
 }
