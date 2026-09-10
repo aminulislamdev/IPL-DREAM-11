@@ -5,13 +5,22 @@ import type { Dispatch, SetStateAction } from "react";
 interface ISelectedPlayerCard {
   selectedPlayer: IPlayer[];
   setSelectedPlayer: Dispatch<SetStateAction<IPlayer[]>>;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
 }
 
 const SelectedPlayerCard = ({
   selectedPlayer,
   setSelectedPlayer,
+  coin,
+  setCoin,
 }: ISelectedPlayerCard) => {
   const handleRemovePlayer = (index: number) => {
+    const player = selectedPlayer[index];
+    const newCoinPrice = coin + player.price;
+
+    setCoin(newCoinPrice);
+
     setSelectedPlayer((prevPlayers) =>
       prevPlayers.filter((_, i) => i !== index)
     );
