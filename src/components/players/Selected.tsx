@@ -9,10 +9,13 @@ interface ISelectedPlayerType {
   setCoin: Dispatch<SetStateAction<number>>;
 }
 
-const Selected = ({ selectedPlayer }: ISelectedPlayerType) => {
+const Selected = ({ selectedPlayer, setSelectedPlayer }: ISelectedPlayerType) => {
   return (
     <div className="w-full">
-      <SelectedPlayerCard selectedPlayer={selectedPlayer} />
+      <SelectedPlayerCard
+        selectedPlayer={selectedPlayer}
+        setSelectedPlayer={setSelectedPlayer}
+      />
     </div>
   );
 };

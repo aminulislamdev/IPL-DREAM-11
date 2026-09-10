@@ -1,17 +1,29 @@
+import { RiDeleteBinLine } from "react-icons/ri";
 import type { IPlayer } from "../../types/player";
+import type { Dispatch, SetStateAction } from "react";
 
 interface ISelectedPlayerCard {
   selectedPlayer: IPlayer[];
+  setSelectedPlayer: Dispatch<SetStateAction<IPlayer[]>>;
 }
 
-const SelectedPlayerCard = ({ selectedPlayer }: ISelectedPlayerCard) => {
+const SelectedPlayerCard = ({
+  selectedPlayer,
+  setSelectedPlayer,
+}: ISelectedPlayerCard) => {
+  const handleRemovePlayer = (index: number) => {
+    setSelectedPlayer((prevPlayers) =>
+      prevPlayers.filter((_, i) => i !== index)
+    );
+  };
+
   return (
     <div className="container mx-auto my-6 w-full rounded-2xl border border-gray-200 bg-white p-3 shadow-sm sm:my-8 sm:p-4 md:my-10 md:p-5">
       <div className="space-y-3">
         {selectedPlayer.map((player, index) => (
           <div
             key={index}
-            className="flex items-center justify-between gap-3 rounded-xl border border-gray-200 bg-gray-50 p-2.5 sm:p-3"
+            className="flex items-center justify-between gap-3 rounded-xl border border-gray-200 bg-gray-50 p-2.5 transition-all duration-200 hover:border-gray-300 hover:bg-white hover:shadow-sm sm:p-3"
           >
             <div className="flex min-w-0 items-center gap-3 sm:gap-4">
               <img
@@ -27,6 +39,14 @@ const SelectedPlayerCard = ({ selectedPlayer }: ISelectedPlayerCard) => {
                 </p>
               </div>
             </div>
+
+            <button
+              onClick={() => handleRemovePlayer(index)}
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-gray-400 transition-all duration-200 hover:bg-red-50 hover:text-red-500 active:scale-95 sm:h-10 sm:w-10"
+              title="Remove player"
+            >
+              <RiDeleteBinLine size={20} />
+            </button>
           </div>
         ))}
       </div>
